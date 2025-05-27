@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio 2025 trend</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Card hover effect */
+    .card.card-custom {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card.card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    .card.card-custom:hover .card-custom-avatar img {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Contact icons fixed bottom-left */
+    .contact-assets {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: none; /* hidden by default */
+      gap: 15px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .contact-assets a {
+      color: #0d6efd;
+      font-size: 24px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-assets a:hover {
+      color: #084298;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Main Section -->
+  <div id="main">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1 id="name">Priti More</h1>
+    <div style="text-align: center;">
+      <h2 class="anim-typewriter" style="font-family: 'Fira Code', monospace; margin-top: -10px;">PHP Developer</h2>
+
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container text-center">
+      <h1 class="aboutHeading">About Me</h1>
+      <p class="aboutPG">
+        I'm Priti More, a passionate and dedicated Software Engineer with over 3 years of experience in web and backend development. I specialize in building scalable, robust, and user-friendly applications using technologies like PHP (Laravel, CodeIgniter), React.js, and modern DevOps tools like Docker, GitHub Actions, and Kubernetes.
+      </p>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="text-center aboutHeading">My Projects</h1>
+      <div class="row pt-5 m-auto" id="projectCards">
+
+          <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 pb-3">
+          <div class="card card-custom bg-white border-white border-0">
+            <div class="card-custom-img" id="project1"></div>
+            <a href="https://www.hockeyfinder.com/" target="_blank" class="grow">
+              <div class="card-custom-avatar">
+                <img class="img-fluid" src="https://pngimg.com/uploads/hockey/hockey_PNG6.png" alt="Avatar" />
+              </div>
+            </a>
+            <div class="card-body" style="overflow-y: auto">
+              <h4 class="card-title">CHP – California Hockey Tournament</h4>
+              <p class="card-text">
+                A tournament management system for organizing hockey tournaments. Features include team registrations,
+                match scheduling, real-time score tracking, and performance analytics. Built using Laravel, ReactJS, MySQL,
+                and secured with JWT.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.hockeyfinder.com/" class="btn btn-info" target="_blank">View Live</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 2 -->
+<div class="col-md-6 col-lg-4 pb-3">
+  <div class="card card-custom bg-white border-white border-0">
+    <div class="card-custom-img" id="project2"></div>
+    <a href="https://sandwich-express.co.in/" target="_blank" class="grow">
+      <div class="card-custom-avatar">
+        <img class="img-fluid" src="https://pngimg.com/uploads/sandwich/sandwich_PNG47.png" alt="Sandwich Express Logo" />
+      </div>
+    </a>
+    <div class="card-body" style="overflow-y: auto">
+      <h4 class="card-title">Sandwich Express</h4>
+      <p class="card-text">
+        A hybrid order management system used for handling both online and offline sandwich orders.
+        Includes features like real-time order tracking and inventory control. Built with CodeIgniter,
+        secured with session handling, and deployed on Ubuntu using PLSQL database.
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://sandwich-express.co.in/" class="btn btn-info" target="_blank">View Live</a>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Skills Card -->
+        <div class="col-md-6 col-lg-4 pb-3">
+          <div class="card card-custom bg-white border-white border-0">
+            <div class="card-custom-img" id="portfolio"></div>
+            <a href="#">
+              <div class="card-custom-avatar">
+                <img class="img-fluid" src="https://img.freepik.com/free-vector/lightbulb-with-gears-icon-design_1308-128405.jpg?semt=ais_hybrid&w=740" alt="Avatar" />
+              </div>
+            </a>
+            <div class="card-body" style="overflow-y: auto">
+              <h4 class="card-title">Skills</h4>
+              <ul class="card-text">
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <h1 class="text-center aboutHeading">Contact Me</h1>
+      <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput"><strong>Name</strong></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your full name" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1"><strong>Email address</strong></label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email address" />
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"><strong>Message</strong></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-info mb-2" id="button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container text-center">
+      <span class="footer-text">Copyright &copy; 2025 | All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <!-- Contact icons  -->
+  <div class="contact-assets">
+    <a href="mailto:pritismore0411@gmail.com" title="Email" target="_blank" rel="noopener">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="tel:+7385487729" title="Phone" target="_blank" rel="noopener">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="https://github.com/pritimore" title="GitHub" target="_blank" rel="noopener">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+  <!-- JavaScript to show contact icons only on contact section -->
+  <script>
+    const contactIcons = document.querySelector('.contact-assets');
+    const contactSection = document.querySelector('#contact');
+
+    function handleScroll() {
+      const rect = contactSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      contactIcons.style.display = isVisible ? 'flex' : 'none';
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+
+</body>
+
+</html>
